@@ -1,0 +1,113 @@
+{% block sidebar %}
+<!--Double navigation-->
+    <header>
+        <!-- Sidebar navigation -->
+        <ul id="slide-out" class="side-nav fixed sn-bg-1 custom-scrollbar ps-container ps-theme-default ps-active-y" style="transform: translateX(0%);" data-ps-id="d1f14803-6eaa-c28a-6799-806a18851658">
+            <!-- Logo -->
+            <li>
+                <div class="logo-wrapper waves-light waves-effect waves-light">
+                    <a href="#"><img src="Material%20Design%20Bootstrap%20Template_fichiers/mdb-transparent.png" class="img-fluid flex-center"></a>
+                </div>
+            </li>
+            <!--/. Logo -->
+            <!--Search Form-->
+            <li>
+                <form class="search-form" role="search">
+                    <div class="form-group waves-light waves-effect waves-light">
+                        <input class="form-control" placeholder="Search" type="text">
+                    </div>
+                </form>
+            </li>
+            <!--/.Search Form-->
+      
+            <!-- Side navigation links -->
+            <li>
+                <ul class="collapsible collapsible-accordion">
+
+                    <li ng-class="{active : __active==='liste'}"><a href="#!/list" class="collapsible-header waves-effect"><i class="fa fa-home"></i> Listes {{__active}}</a></li>
+                    <li ng-class="{active : __active==='about'}"><a href="#!/about" class="collapsible-header waves-effect"><i class="fa fa-newspaper-o"></i> About</a></li>
+                    <li ng-class="{active : __active==='contact'}"><a href="#!/contact" class="collapsible-header waves-effect"><i class="fa fa-envelope"></i> Contact</a></li>
+                    <span ng-if="__DEBUG">
+                      <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-home"></i> Homepages<i class="fa fa-angle-down rotate-icon"></i></a>
+                      <div class="collapsible-body" style="display: none;"> 
+                          <ul>
+                              <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Homepage-1.html" class="waves-effect">Blog Homepage V.1</a> 
+                              </li>
+                              <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Homepage-2.html" class="waves-effect">Blog Homepage V.2</a>
+                              </li>
+                              <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Homepage-3.html" class="waves-effect">Blog Homepage V.3</a>
+                              </li>
+                              <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Homepage-4.html" class="waves-effect">Blog Homepage V.4</a>
+                              </li>
+                              <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Homepage-5.html" class="waves-effect">Blog Homepage V.5</a>
+                              </li>
+                              <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Homepage-6.html" class="waves-effect">Blog Homepage V.6</a>
+                              </li>
+                              <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Homepage-7.html" class="waves-effect">Blog Homepage V.7</a>
+                              </li>
+                              <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Homepage-8.html" class="waves-effect">Blog Homepage V.8</a>
+                              </li>
+                              <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Homepage-9.html" class="waves-effect">Blog Homepage V.9</a>
+                              </li>
+                              <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Homepage-10.html" class="waves-effect">Blog Homepage V.10</a>
+                              </li>
+                              <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Homepage-11.html" class="waves-effect">Blog Homepage V.11</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                      <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-pencil"></i> Post Pages<i class="fa fa-angle-down rotate-icon"></i></a>
+                          <div class="collapsible-body" style="display: none;">
+                              <ul>
+                                  <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Post-Page-1.html" class="waves-effect">Blog Post Page V.1</a>
+                                  </li>
+                                  <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Post-Page-2.html" class="waves-effect">Blog Post Page V.2</a>
+                                  </li>
+                                  <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Post-Page-3.html" class="waves-effect">Blog Post Page V.3</a>
+                                  </li>
+                                  <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Post-Page-4.html" class="waves-effect">Blog Post Page V.4</a>
+                                  </li>
+                                  <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Post-Page-5.html" class="waves-effect">Blog Post Page V.5</a>
+                                  </li>
+                                  <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Post-Page-6.html" class="waves-effect">Blog Post Page V.6</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-heart-o"></i> Author Pages<i class="fa fa-angle-down rotate-icon"></i></a>
+                          <div class="collapsible-body" style="display: none;">
+                              <ul>
+                                  <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Author-Page-1.html" class="waves-effect">Blog Author Page V.1</a>
+                                  </li>
+                                  <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Author-Page-2.html" class="waves-effect">Blog Author Page V.2</a>
+                                  </li>
+                                  <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Author-Page-3.html" class="waves-effect">Blog Author Page V.3</a>
+                                  </li>
+                                  <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Author-Page-4.html" class="waves-effect">Blog Author Page V.4</a>
+                                  </li>
+                                  <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Author-Page-5.html" class="waves-effect">Blog Author Page V.5</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-coffee"></i> Category Pages<i class="fa fa-angle-down rotate-icon"></i></a>
+                          <div class="collapsible-body" style="display: none;">
+                              <ul>
+                                  <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Category-Page-1.html" class="waves-effect">Blog Category Page V.1</a>
+                                  </li>
+                                  <li><a href="https://mdbootstrap.com/live/_MDB/templates/Blog/Blog-Category-Page-2.html" class="waves-effect">Blog Category Page V.2</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li><a href="https://mdbootstrap.com/newsletter/" class="collapsible-header waves-effect"><i class="fa fa-newspaper-o"></i> Newsletter</a></li>
+                      <li><a href="https://mdbootstrap.com/bootstrap-tutorial/" class="collapsible-header waves-effect"><i class="fa fa-book"></i> Tutorials</a></li>
+                      <li><a href="https://mdbootstrap.com/product/blog-theme/" class="collapsible-header waves-effect"><i class="fa fa-diamond"></i> Buy Now</a></li>
+                    </span>
+                </ul>
+            </li>
+            <!--/. Side navigation links -->
+            <div class="sidenav-bg mask-strong"></div>
+        <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; height: 934px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 8px;"></div></div></ul>
+        <!--/. Sidebar navigation -->
+{% endblock %}

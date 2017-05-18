@@ -1,0 +1,25 @@
+/* Styles go here */
+body{height: 100%; min-height: 100%;}
+footer{ 
+  /*margin: 10px 10px 0 10px; */
+  /*background-color: rgba(0, 0, 0, 0.1); */
+  padding: 10px;
+  position:fixed;
+  bottom:0;
+  width: calc(100%);
+  /*border-radius: 5px 5px 0 0;*/
+  /*border:solid 1px #ddd;*/
+ }
+
+ .fixed-sn main {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.side-nav .collapsible li.active {
+    background-color: #d0637c;
+}
+
+.side-nav a {
+   outline: 0;
+}
