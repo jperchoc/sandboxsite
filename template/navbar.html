@@ -21,7 +21,7 @@
             <li class="nav-item" ng-if="authentificationService.getConnected()" ng-click="authentificationService.disconnect()">
                 <a href="#" class="nav-link waves-effect waves-light"><i class="fa fa-power-off"></i> Se deconnecter</a>
             </li>
-            <li class="nav-item" ng-if="!authentificationService.getConnected()">
+            <li class="nav-item" ng-if="!authentificationService.getConnected()" ng-class="{active : navigationService.getActivePage()==='login'}">
                 <a href="#!/login" class="nav-link waves-effect waves-light"><i class="fa fa-power-off"></i> Se connecter</a>
             </li>
         </ul>
