@@ -1,19 +1,23 @@
-{% extends "/template/base.html" %}
+<% extends "/template/base.html" %>
 
-{% block main %}
-  {% include "/template/sidebar.html" %}
-  {% include "/template/navbar.html" %}
+<% block main %>
+  <header>
+    <% include "/template/sidebar.html" %>
+    <% include "/template/navbar.html" %>
+  </header>
   <main>
   <div class="main-container container">
     <div class="row mt-1">
        <div class="col-lg-12">
+         
          <section>
-            {% block content %}
-            {% endblock %}
+            <% block content %>
+            <% endblock %>
          </section>
+        
        </div>
     </div>
   </div>
   </main>
-  {% include "/template/footer.html" %}
-{% endblock %}
+  <% include "/template/footer.html" %>
+<% endblock %>

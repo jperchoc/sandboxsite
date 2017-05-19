@@ -8,14 +8,13 @@
 </head>
 
 <body ng-app="monsite" ng-cloak ng-controller="MainCtrl" class="fixed-sn deep-purple-skin">
-    {% block main %}
-    {% endblock %} 
-
-    {% block importJs %}
-        {% for item in jsResdources %}
-            <script src="{{ item }}"></script>
-        {% endfor %}
-    {% endblock %} 
+    <% block main %>
+    <% endblock %>
+    <% block importJs %>
+        <% for item in jsResdources %>
+            <script src="<$ item $>"></script>
+        <% endfor %>
+    <% endblock %>
     <script>
         // SideNav init
         $(".button-collapse").sideNav();
@@ -24,15 +23,5 @@
     
         // Animation init
         new WOW().init();
-    
-        //Modal contact init
-        $('#modal-contact').on('shown.bs.modal', function () {
-          $('#myInput').focus()
-        })
-        
-        // MDB Lightbox Init
-        $(function () {
-            $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
-        });
     </script>
 </body>

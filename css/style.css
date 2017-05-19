@@ -16,10 +16,19 @@ footer{
     margin-right: 2%;
 }
 
-.side-nav .collapsible li.active {
-    background-color: #d0637c;
+.nav-item.active, .side-nav .collapsible li.active {
+    background-color: #d0637c!important;
 }
 
-.side-nav a {
+.side-nav a, .nav-item a {
    outline: 0;
 }
+
+
+/*@media (min-width: 1440px) {
+  .navbar .button-collapse {
+    display: block;
+    margin-top: 13px;
+    margin-left: 15px;
+  } 
+}*/

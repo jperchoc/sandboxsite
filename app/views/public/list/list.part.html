@@ -1,5 +1,13 @@
 <h3>Accueil</h3>
-  <ul class="list-group">
-    <li class="list-group-item" ng-repeat="item in vm.items">{{item.nom}} {{item.prenom}}</li>
-  </ul>
-  <div id="footer"></div>
+<ul class="list-group">
+  <li href="#" class="list-group-item list-group-item-action flex-column align-items-start" 
+      ng-repeat="item in vm.items" 
+      ng-class="{active: authentificationService.getConnectedUser().id === item.id }" 
+      ng-click="vm.connect(item)">
+   
+    <div class="d-flex w-100 justify-content-between">
+      <p class="mb-1"> {{item.nom}} {{item.prenom}}</p>
+  </li>
+</ul>
+
+
