@@ -1,7 +1,6 @@
-var app = angular.module('monsite.login');
+var app = angular.module(modulesPrefix + '.login');
 console.log("list.controller initialisé");
 app.controller('LoginController', function($scope, $location, NavigationService, AuthentificationService) {
-  NavigationService.setActivePage("login");
   var vm = this;
   vm.mail="";
   vm.password="";

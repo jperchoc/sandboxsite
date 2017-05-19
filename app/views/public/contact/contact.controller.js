@@ -1,4 +1,3 @@
-var app = angular.module('monsite.contact');
+var app = angular.module(modulesPrefix + '.contact');
 app.controller('ContactController', function($scope, NavigationService) {
-  NavigationService.setActivePage("contact");
 });

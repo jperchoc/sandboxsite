@@ -5,7 +5,8 @@ var jsResdources =
     
     "app/dependencies.js",
     "app/app.js",
-    "app/routes.js",
+    "config/routes.js",
+    "app/router.js",
     "https://code.jquery.com/jquery-3.2.1.min.js",
     "js/mdb.js",
 ];

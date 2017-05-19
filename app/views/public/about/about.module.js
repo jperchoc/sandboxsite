@@ -1,1 +1,1 @@
-angular.module('monsite.about', []);
+angular.module(modulesPrefix + '.about', []);

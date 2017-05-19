@@ -1,1 +1,1 @@
-angular.module('monsite.navigation', []);
+angular.module(modulesPrefix + '.navigation', []);

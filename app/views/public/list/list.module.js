@@ -1,1 +1,1 @@
-angular.module('monsite.list', []);
+angular.module(modulesPrefix + '.list', []);

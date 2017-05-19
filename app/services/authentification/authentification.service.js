@@ -1,4 +1,4 @@
-angular.module('monsite.authentification')
+angular.module(modulesPrefix + '.authentification')
 .service('AuthentificationService', function() {
   var connected = false;
   var connectedUser = true;

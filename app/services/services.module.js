@@ -1,8 +1,8 @@
 (function() {
   'use strict';
 
-  angular.module('monsite.services', [
-    'monsite.navigation',
-    'monsite.authentification',
+  angular.module(modulesPrefix + '.services', [
+    modulesPrefix + '.navigation',
+    modulesPrefix + '.authentification',
   ]);
 })();

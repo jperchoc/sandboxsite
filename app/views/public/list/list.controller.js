@@ -1,7 +1,6 @@
-var app = angular.module('monsite.list');
+var app = angular.module(modulesPrefix + '.list');
 console.log("list.controller initialisé");
 app.controller('ListController', function($scope, $rootScope, NavigationService, AuthentificationService) {
-  NavigationService.setActivePage("liste");
   var vm = this;
   var root = $scope.$parent;
   vm.items = [

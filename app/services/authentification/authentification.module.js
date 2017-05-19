@@ -1,1 +1,1 @@
-angular.module('monsite.authentification', []);
+angular.module(modulesPrefix + '.authentification', []);

@@ -1,1 +1,1 @@
-angular.module('monsite.contact', []);
+angular.module(modulesPrefix + '.contact', []);

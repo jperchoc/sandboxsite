@@ -9,14 +9,12 @@
             <p>Blog Post Page V.1</p>
         </div>
         <ul class="nav navbar-nav nav-flex-icons ml-auto">
-            <li class="nav-item" ng-class="{active : navigationService.getActivePage()==='liste'}">
-                <a ng-href="#!/list" class="nav-link waves-effect waves-light"><i class="fa fa-home"></i> Listes</a>
-            </li>
-            <li class="nav-item" ng-class="{active : navigationService.getActivePage()==='about'}">
-                <a ng-href="#!/about" class="nav-link waves-effect waves-light"><i class="fa fa-newspaper-o"></i> About</a>
-            </li>
-            <li class="nav-item" ng-class="{active : navigationService.getActivePage()==='contact'}">
-                <a ng-href="#!/contact" class="nav-link waves-effect waves-light"><i class="fa fa-envelope"></i> Contact</a>
+            <li class="nav-item"
+                ng-repeat="route in routes | filter: { showInNavbar: true }"
+                ng-class="{active : navigationService.getActivePage()===route.activeTag}">
+                <a ng-href="#!{{route.route}}" class="nav-link waves-effect waves-light">
+                    <i class="fa {{route.icon}}"></i> {{route.name}}
+                </a>
             </li>
             <li class="nav-item" ng-if="authentificationService.getConnected()" ng-click="authentificationService.disconnect()">
                 <a href="#" class="nav-link waves-effect waves-light"><i class="fa fa-power-off"></i> Se deconnecter</a>

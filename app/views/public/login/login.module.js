@@ -1,1 +1,1 @@
-angular.module('monsite.login', []);
+angular.module(modulesPrefix + '.login', []);

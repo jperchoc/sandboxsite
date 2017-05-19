@@ -1,0 +1,1 @@
+var modulesPrefix="lubisub"; //Don't forget to set the same name in base.html's body

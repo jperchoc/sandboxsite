@@ -1,8 +1,8 @@
 var dependencies = [
   'ngRoute',
-  'monsite.services',
-  'monsite.list',
-  'monsite.about',
-  'monsite.contact',
-  'monsite.login',
+  modulesPrefix + '.services',
+  modulesPrefix + '.list',
+  modulesPrefix + '.about',
+  modulesPrefix + '.contact',
+  modulesPrefix + '.login',
 ];
