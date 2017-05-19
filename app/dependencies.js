@@ -4,4 +4,5 @@ var dependencies = [
   'monsite.list',
   'monsite.about',
   'monsite.contact',
+  'monsite.login',
 ];

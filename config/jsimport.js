@@ -20,6 +20,7 @@ function addModule(path, name) {
 addModule('app/views/public/list', 'list');
 addModule('app/views/public/about', 'about');
 addModule('app/views/public/contact', 'contact');
+addModule('app/views/public/login', 'login');
 addModule('app/services', 'services');
 addModule('app/services/navigation', 'navigation');
 addModule('app/services/authentification', 'authentification');

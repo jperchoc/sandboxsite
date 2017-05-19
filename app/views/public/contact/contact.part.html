@@ -1,7 +1,24 @@
 <h3>Nous contacter</h3>
 <form>
-  <textarea  class="form-control" rows="10"></textarea>
-  <input type="text" class="form-control" placeholder="votre nom" />
-  <input type="email" class="form-control" placeholder="votre email" />
+  <div class="md-form">
+    <i class="fa fa-pencil prefix"></i>
+    <textarea type="text" id="form8" class="md-textarea"></textarea>
+    <label for="form8">Icon Prefix</label>
+  </div>
+  <div class="md-form">
+    <i class="fa fa-user prefix"></i>
+    <label for="prenom" class="">Prénom</label>
+    <input type="text" class="form-control" id="prenom" />
+  </div>
+  <div class="md-form">
+    <i class="fa fa-user prefix"></i>
+    <input type="text" class="form-control" id="nom" />
+    <label for="nom" class="">Nom</label>
+  </div>
+  <div class="md-form">
+    <i class="fa fa-envelope prefix"></i>
+    <input type="email" id="email" class="form-control" />
+    <label for="email" class="">Email</label>
+  </div>  
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
