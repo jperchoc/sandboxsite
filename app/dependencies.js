@@ -5,4 +5,5 @@ var dependencies = [
   modulesPrefix + '.about',
   modulesPrefix + '.contact',
   modulesPrefix + '.login',
+  modulesPrefix + '.privateHome',
 ];

@@ -42,8 +42,8 @@ var routes = [
   {
     route:'/secure/home',
     activeTag:'.home',
-    templateUrl:'app/views/public/contact/contact.part.html',
-    controller:'ContactController',
+    templateUrl:'app/views/private/privateHome/privateHome.part.html',
+    controller:'PrivateHomeController',
     name: 'Accueil privé',
     icon: 'fa-home',
     showInNavbar: false,

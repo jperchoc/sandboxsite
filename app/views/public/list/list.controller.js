@@ -1,16 +1,8 @@
 var app = angular.module(modulesPrefix + '.list');
 console.log("list.controller initialisé");
-app.controller('ListController', function($scope, $rootScope, NavigationService, AuthentificationService) {
+app.controller('ListController', function($scope, NavigationService, AuthentificationService, APIService) {
   var vm = this;
-  var root = $scope.$parent;
-  vm.items = [
-    {nom:"Perchoc", prenom:'Jonathan', id:0},
-    {nom:"Bleunven", prenom:'Mathilde', id:1},
-    {nom:"Robert", prenom:'Jean-Marc', id:2},
-    {nom:"Sarradel", prenom:'Laeticia', id:3},
-    {nom:"Robert", prenom:'Kilian', id:4}
-  ];
-
+  vm.items = APIService.getUsers();
   vm.connect = function(item) {
     AuthentificationService.connect(item);
     console.log(item)

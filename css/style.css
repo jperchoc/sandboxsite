@@ -16,8 +16,14 @@ footer{
     margin-right: 2%;
 }
 
-.nav-item.active, .side-nav .collapsible li.active {
+.deep-purple-skin .nav-item.active,
+.deep-purple-skin .side-nav .collapsible li.active {
     background-color: #d0637c!important;
+}
+
+ .black-skin .nav-item.active,
+.black-skin .side-nav .collapsible li.active {
+    background-color: #2AD1A3!important;
 }
 
 .side-nav a, .nav-item a {

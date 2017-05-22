@@ -4,5 +4,6 @@
   angular.module(modulesPrefix + '.services', [
     modulesPrefix + '.navigation',
     modulesPrefix + '.authentification',
+    modulesPrefix + '.API',
   ]);
 })();
